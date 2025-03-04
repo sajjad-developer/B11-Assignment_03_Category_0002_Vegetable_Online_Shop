@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B11-A3-Living-Lab-main-Assignment_03_Category_0002</title>
+    <!-- Sora Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sora-font {
+        font-family: "Sora", sans-serif;
+      }
+    </style>
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Color Customize using Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "button-color": "rgb(23, 152, 0)",
+              "black-color": "rgb(17, 17, 17)",
+              "white-color": "rgb(255, 255, 255)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- font Awesome Kit CDN -->
+    <script
+      src="https://kit.fontawesome.com/30ab203db2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="sora-font mx-auto md:container">
+    <header>
+      <!-- Navbar -->
+      <div class="navbar text-black-color container">
+        <div class="navbar-start">
+          <img
+            class="hidden lg:block ml-12"
+            src="./c2-assets/logo-header.png"
+            alt=""
+          />
+
+          <img
+            class="lg:hidden ml-4"
+            src="./c2-assets/sm-logo-header.png"
+            alt=""
+          />
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-48"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu hidden menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2"
+            >
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl font-normal">
+            <li><a class="ml-24">Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div
+          class="navbar-end text-bike-primary space-x-3 hidden lg:flex mr-12"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping ml-6 mr-[10px]"></i>
+          <button
+            class="btn font-normal text-xl border-button-color bg-transparent"
+          >
+            Login
+          </button>
+          <button
+            class="btn bg-button-color font-normal text-xl text-white-color"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </header>
+    <footer></footer>
+  </body>
+</html>
