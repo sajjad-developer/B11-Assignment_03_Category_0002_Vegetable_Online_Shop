@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B11-A3-Living-Lab-main-Assignment_03_Category_0002</title>
+    <title>B11-Assignment_03_Category_0002_Vegtable_Online_Shop</title>
     <!-- Sora Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +35,8 @@
               "button-color": "rgb(23, 152, 0)",
               "black-color": "rgb(17, 17, 17)",
               "white-color": "rgb(255, 255, 255)",
+              "gradient-up": "rgb(255, 255, 255)",
+              "gradient-down": "rgb(239, 235, 227)",
             },
           },
         },
@@ -47,27 +49,23 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="sora-font mx-auto md:container">
-    <header>
+  <body class="sora-font">
+    <header class="bg-gradient-to-b from-gradient-up to-gradient-down">
       <!-- Navbar -->
-      <div class="navbar text-black-color container">
+      <section class="navbar text-black-color container mx-auto px-10">
         <div class="navbar-start">
           <img
-            class="hidden lg:block ml-12"
+            class="hidden lg:block mt-3"
             src="./c2-assets/logo-header.png"
             alt=""
           />
 
-          <img
-            class="lg:hidden ml-4"
-            src="./c2-assets/sm-logo-header.png"
-            alt=""
-          />
+          <img class="lg:hidden" src="./c2-assets/sm-logo-header.png" alt="" />
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 ml-48"
+                class="h-5 w-5 ml-36"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -82,7 +80,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu hidden menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2"
+              class="menu hidden menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2"
             >
               <li><a>Product</a></li>
               <li><a>Services</a></li>
@@ -98,22 +96,51 @@
           </ul>
         </div>
         <div
-          class="navbar-end text-bike-primary space-x-3 hidden lg:flex mr-12"
+          class="navbar-end text-bike-primary hidden lg:flex mr-12 space-x-5"
         >
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-cart-shopping ml-6 mr-[10px]"></i>
-          <button
-            class="btn font-normal text-xl border-button-color bg-transparent"
-          >
-            Login
-          </button>
-          <button
-            class="btn bg-button-color font-normal text-xl text-white-color"
-          >
-            Register
-          </button>
+          <div class="space-x-5">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="flex space-x-2">
+            <button
+              class="btn font-normal text-xl border-button-color bg-transparent w-1/2"
+            >
+              Login
+            </button>
+            <button
+              class="btn bg-button-color font-normal text-xl text-white-color w-9/12"
+            >
+              Register
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Banner Section -->
+      <section class="mt-24 container mx-auto px-10">
+        <div class="card-body">
+          <h2 class="font-semibold text-3xl lg:text-6xl text-center">
+            Freshness
+            <span class="text-button-color"
+              >You Can <br />
+              Count</span
+            >
+            on, Prices You'll love
+          </h2>
+          <p class="font-normal text-base lg:text-xl text-center">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <figure>
+          <img
+            class="mx-auto"
+            src="./c2-assets/hero-vegetables.png"
+            alt="Movie"
+          />
+        </figure>
+      </section>
     </header>
     <footer></footer>
   </body>
