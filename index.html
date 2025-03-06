@@ -56,7 +56,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="sora-font bg-white-color">
+
+  <body class="sora-font h-screen bg-white-color">
     <header class="bg-gradient-to-b from-gradient-up to-gradient-down">
       <!-- Navbar -->
       <section class="navbar text-black-color container mx-auto px-10">
@@ -568,10 +569,14 @@
         </div>
       </section>
     </main>
+  </body>
 
+  <!-- Overlay section -->
+
+  <section class="relative">
     <!-- Footer Section -->
-    <footer class="footer bg-footer-color mt-[389px] p-10">
-      <nav>
+    <footer class="footer bg-footer-color mt-[389px] p-10 lg:pt-14">
+      <nav class="">
         <img src="./c2-assets/logo-footer.png" alt="" />
         <p class="text-footer-text-color font-normal text-base lg:text-xl">
           Discover a world of treats, toys, and
@@ -609,5 +614,62 @@
         </div>
       </nav>
     </footer>
-  </body>
+    <!-- Get Grocery News Section   -->
+    <section
+      class="bg-gradient-down rounded-xl w-[300px] h-[467px] lg:h-[457px] lg:w-[74rem] absolute bottom-[540px] lg:bottom-48 left-2 lg:left-10"
+    >
+      <div class="flex flex-col lg:flex-row pt-[30px]">
+        <figure class="">
+          <img
+            class="w-1/3 mx-auto"
+            class=""
+            src="./c2-assets/vegetable-busket.png"
+            alt="Movie"
+          />
+        </figure>
+        <div class="w-2/3 mx-auto space-y-2 lg:space-y-9">
+          <h2
+            class="lg:text-black-color text-footer-color font-bold lg:text-[36px] text-[22px]"
+          >
+            Get Grocery News!
+          </h2>
+          <p class="text-black-color font-normal text-base lg:text-xl">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <label class="input input-bordered flex items-center gap-2">
+            <input
+              type="text"
+              class="grow font-normal"
+              placeholder="Enter email ..."
+            />
+          </label>
+          <div class="card-actions">
+            <button
+              class="btn font-normal text-white-color bg-footer-color text-sm lg:text-xl"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- <section class="relative">
+    <div class="bg-yellow-400 h-60 mt-32">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      Sabala
+    </div>
+    <div class="text-center bg-green-500 w-[1176px] absolute bottom-48 left-10">
+      Testing the condition
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+  </section> -->
 </html>
