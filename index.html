@@ -17,6 +17,14 @@
       }
     </style>
 
+    <!--internal CSS for stop hover effect  -->
+    <style>
+      .navbar-center li a:hover,
+      .navbar-center li a:focus {
+        background-color: transparent !important;
+        color: inherit !important;
+      }
+    </style>
     <!-- DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
@@ -61,7 +69,9 @@
   <body class="sora-font">
     <header class="bg-gradient-to-b from-gradient-up to-gradient-down">
       <!-- Navbar -->
-      <section class="navbar text-black-color container mt-4 lg:mt-4 mx-auto">
+      <section
+        class="navbar text-black-color container mt-4 lg:mt-4 pl-4 lg:px-12"
+      >
         <div class="navbar-start">
           <img
             class="hidden lg:block mt-4"
@@ -91,7 +101,7 @@
               tabindex="0"
               class="menu hidden menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2"
             >
-              <li><a>Product</a></li>
+              <li class=""><a>Product</a></li>
               <li><a>Services</a></li>
               <li><a>Contact us</a></li>
             </ul>
@@ -99,9 +109,11 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-xl font-normal">
-            <li><a class="ml-24">Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact us</a></li>
+            <li>
+              <a class="ml-24" href="#">Product</a>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
           </ul>
         </div>
         <div
@@ -645,12 +657,12 @@
     >
       <nav class="">
         <img
-          class="absolute pt-12 lg:pt-5 top-56 -left-1 ml-6 lg:pl-20"
+          class="absolute pt-12 lg:pt-5 top-56 -left-1 ml-7 lg:ml-10"
           src="./c2-assets/logo-footer.png"
           alt=""
         />
         <p
-          class="absolute p-12 lg:pt-5 top-72 -left-1 -ml-2 lg:ml-6 lg:pl-20 text-footer-text-color font-normal text-base lg:text-xl"
+          class="absolute p-12 lg:pt-5 top-72 -left-1 -ml-3 lg:ml-0 text-footer-text-color font-normal text-base lg:text-xl"
         >
           Discover a world of treats, toys, and
           <br />essentials handpicked for your furry <br />
@@ -658,7 +670,7 @@
         </p>
       </nav>
       <nav
-        class="absolute pt-36 lg:pt-4 lg:top-56 lg:left-96 ml-8 lg:ml-40 lg:pl-36"
+        class="absolute pt-36 lg:pt-4 lg:top-56 lg:left-96 ml-8 lg:ml-[100px] lg:pl-36"
       >
         <br />
         <a
@@ -690,22 +702,22 @@
         >
           <a href=""
             ><i
-              class="absolute lg:ml-[375px] pt-[264px] lg:pt-0 lg:top-56 lg:mt-[120px] lg:pl-72 lg:left-96 text-white-color fa-brands fa-youtube"
+              class="absolute lg:ml-[370px] pt-[264px] lg:pt-0 lg:top-56 lg:mt-[120px] lg:pl-72 lg:left-96 text-white-color fa-brands fa-youtube"
             ></i
           ></a>
           <a href=""
             ><i
-              class="absolute lg:ml-[465px] pt-44 lg:pt-0 lg:top-64 mt-[88px] text-white-color fa-brands fa-linkedin"
+              class="absolute lg:ml-[535px] pt-44 lg:pt-0 lg:top-64 mt-[88px] text-white-color fa-brands fa-linkedin"
             ></i
           ></a>
           <a href=""
             ><i
-              class="absolute lg:ml-[440px] pt-44 lg:pt-0 lg:top-64 mt-[88px] text-white-color fa-brands fa-instagram"
+              class="absolute lg:ml-[510px] pt-44 lg:pt-0 lg:top-64 mt-[88px] text-white-color fa-brands fa-instagram"
             ></i
           ></a>
           <a href=""
             ><i
-              class="absolute ml-[96px] lg:ml-[415px] pt-52 lg:pt-0 lg:top-72 mt-14 text-white-color fa-brands fa-facebook"
+              class="absolute ml-[96px] lg:ml-[486px] pt-52 lg:pt-0 lg:top-72 mt-14 text-white-color fa-brands fa-facebook"
             ></i
           ></a>
         </div>
@@ -739,22 +751,17 @@
     </footer>
     <!-- Get Grocery News Section   -->
     <section
-      class="bg-gradient-down rounded-xl w-[300px] h-[467px] lg:h-[457px] lg:w-[75rem] absolute bottom-[540px] lg:bottom-44 left-2 lg:left-24 -top-56"
+      class="bg-gradient-down rounded-xl w-[286px] h-[467px] lg:h-[457px] lg:w-[1180px] absolute bottom-[540px] lg:bottom-44 left-4 lg:left-10 -top-56"
     >
       <div class="flex flex-col lg:flex-row pt-[30px]">
-        <figure class="w-1/2 mx-auto lg:mx-0">
-          <img
-            class=""
-            class=""
-            src="./c2-assets/vegetable-busket.png"
-            alt="Movie"
-          />
+        <figure class="w-1/2 mx-auto lg:pl-12 lg:mx-0">
+          <img src="./c2-assets/vegetable-busket.png" alt="Movie" />
         </figure>
         <div
           class="text-center lg:text-left space-y-7 lg:space-y-9 px-2 lg:px-0"
         >
           <h2
-            class="lg:text-black-color text-footer-color font-bold lg:text-[36px] text-[22px]"
+            class="lg:text-black-color text-footer-color font-bold lg:text-[36px] text-[22px] pt-6"
           >
             Get Grocery News!
           </h2>
