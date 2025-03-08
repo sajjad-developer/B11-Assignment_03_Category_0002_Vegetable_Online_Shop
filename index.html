@@ -25,6 +25,15 @@
         color: inherit !important;
       }
     </style>
+
+    <!-- Stop br effect -->
+    <style>
+      @media (max-width: 640px) {
+        .email-message br {
+          display: none !important;
+        }
+      }
+    </style>
     <!-- DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
@@ -216,13 +225,12 @@
         >
           <!-- first service card -->
           <div class="card bg-gradient-down">
-            <figure>
-              <img
-                class="mx-auto mt-8"
-                src="./c2-assets/service.png"
-                alt="24/7 service"
-              />
-            </figure>
+            <div class="avatar">
+              <div class="mx-auto p-4 rounded-full mt-8 bg-white-color">
+                <img src="./c2-assets/service.png" />
+              </div>
+            </div>
+
             <div class="card-body text-center space-y-4">
               <h2 class="font-semibold text-xl lg:text-2xl">24/7 Services</h2>
               <p class="font-light text-base lg:text-xl">
@@ -235,7 +243,7 @@
           <div class="card bg-gradient-down">
             <figure>
               <img
-                class="mx-auto mt-8"
+                class="mx-auto p-4 rounded-full mt-8 bg-white-color"
                 src="./c2-assets/delivery.png"
                 alt="24/7 service"
               />
@@ -251,7 +259,7 @@
           <div class="card bg-gradient-down">
             <figure>
               <img
-                class="mx-auto mt-8"
+                class="mx-auto p-4 rounded-full mt-8 bg-white-color"
                 src="./c2-assets/healthy.png"
                 alt="24/7 service"
               />
